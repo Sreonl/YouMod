@@ -203,7 +203,7 @@ jobs:
 
       - name: Clone YouPiP
         if: ${{ inputs.youpip }}
-        run: git clone --quiet --depth=1 https://github.com/PoomSmart/YouPiP.git
+        run: git clone --quiet --depth=1 https://github.com/Tonwalter888/YouPiP.git
     
       - name: Clone YTUHD
         if: ${{ inputs.ytuhd }}
@@ -214,7 +214,7 @@ jobs:
         run: git clone --quiet --depth=1 https://github.com/PoomSmart/Return-YouTube-Dislikes.git
 
       - name: Clone YouGroupSettings
-        run: git clone --quiet --depth=1 https://github.com/PoomSmart/YouGroupSettings.git
+        run: git clone --quiet --depth=1 https://github.com/Tonwalter888/YouGroupSettings.git
            
       - name: Clone YTVideoOverlay
         if: ${{ inputs.youpip || inputs.ytuhd || inputs.youquality || inputs.youspeed || inputs.youmute || inputs.youloop || inputs.youshare || inputs.getcap }}
@@ -254,7 +254,7 @@ jobs:
 
       - name: Clone YouChooseQuality
         if: ${{ inputs.youchoose }}
-        run: git clone --quiet https://github.com/PoomSmart/YouChooseQuality.git
+        run: git clone --quiet https://github.com/Tonwalter888/YouChooseQuality.git
 
       - name: Clone YouShare
         if: ${{ inputs.youshare }}
@@ -441,7 +441,6 @@ jobs:
           
       - name: Inject Tweaks Into IPA
         run: |
-          tweaks="OpenYouTubeSafariExtension.appex"
 
           for f in *.deb; do
             tweaks="$tweaks $f"
